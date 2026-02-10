@@ -28,6 +28,40 @@
             <img id="RiceField" src="RiceField.jpg" width="300">
         </p>
     </div>
+
+    <h2> Play Some BlackJack*</h2>
+    <button onclick="playBlackJack();">Play Now</button>
+    <div id="divMessage">Can you hit 21?</div>
+    <div id="divCard1"></div>
+    <div id="divCard2"></div>
+    <div id="divCard3"></div>
+    <div id="divSum"></div>
+
+    <!-- TODO: move this code to external .js file -->
+    <script>
+        function playBlackJack(){
+            // variable to hold our first 'card'
+            let draw1 = drawCard();
+            
+            console.log("card1 =" + draw1)
+            let draw2 = drawCard();
+
+            console.log("card2 =" + draw2)
+
+            // variable to hold sum
+            let sum = 0;
+
+
+        }
+        // Will generaate a number 1-10 
+        function drawCard(){
+            let number = Math.random() * 10;
+
+            number = Math.ceil(number);
+
+            return number;
+        }
+    </script>
     <h2>There are 4 pillars of programming</h2>
 
     <h3>Variables</h3>
@@ -47,9 +81,45 @@
         // 
         var lastName = "Micksch";
     </script>
-
-    <h3>Descision Logic (if/else)</h3>
     <h3>Functions</h3>
+
+    ><script>
+        // Functions allow you to organize checks of code. and allow you to easily reuse code.
+
+        // The keyword function lets interpretors know where the code that can be reused is; common practice has use name it with a verb.
+        // You should am to use camelCase or snake_case either works but be consistent.
+        function addNumbers(){
+            let number1 = 5;
+            let number2 = 8;
+
+            // Variable to hold the sum
+            let sum = number1 + number2;
+
+            // writes sum out to console
+            console.log("The sum is:", sum);
+
+        }
+
+        // For teseting we have this line which calls the addNumbers function.
+        addNumbers();
+    </script>
+    <h3>Descision Logic (if/else)</h3>
+    <script>
+        // an if statement will check if the variable exists or if it's true and if it is will run the code head within.
+        // in an if code you should only have one if statement, though else if statements can be done any number of times as needed.
+        // && requires both conditions to be true
+        // || or - requires only one to be true.
+        if(firstName == "Andrew" && lastName =="Micksch"){
+            console.log("Andrew Micksch is Here")
+        }
+        else if(firstName == "Andrew" || lastName =="Micksch"){
+            consolde.log("Andrew is here.")
+        }
+        // else is what happens if nothing above works.
+        else{
+            console.log("Andrew is not here")
+        }
+    </script>
     <h3>Loops</h3>
 </body>
 </html>
