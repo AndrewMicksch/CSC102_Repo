@@ -34,6 +34,7 @@
             // Changes the testedLuck bool to be true for winGame
                 testedLuck = true;
                 // these following lines grab the previously generated draw1 and draw2 card for confirmation.
+                console.log("Testing your luck!")
             document.getElementById("divCard1").textContent="First Card ="+ draw1;
             console.log("card1 =" + draw1)
 
