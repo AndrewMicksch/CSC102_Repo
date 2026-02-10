@@ -1,0 +1,26 @@
+/* Start of the style sheet */
+
+body{
+    background-color: turquoise;
+    color: gray;
+}
+/* Changes the style of the nave section to be in a specific location stay on the left side and have a specific didstance between the nav box and the text. */
+nav{
+    height: 600px;
+    width: 200px;
+    float: left;
+    padding: 5px;
+    line-height: 30px;
+}
+footer{
+    text-align: center;
+    margin-right: 200px;
+}
+
+#RiceField{
+    margin-right: 200px;
+}
+
+header{
+    text-align: center;
+}
