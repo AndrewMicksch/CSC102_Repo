@@ -4,7 +4,7 @@
         let draw1;
         let draw2;
         let draw3;
-        let drawSum
+        let drawSum;
         function playBlackJack(){
             testedLuck = false;
             // variable to hold our first 'card'. it changes the global variable as well incase the player chooses to test their luck.
